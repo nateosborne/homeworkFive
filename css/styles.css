@@ -467,5 +467,39 @@ footer .socials .twitter {
     margin-bottom: 46px;
   }
 }
+.accountpage {
+  display: flex;
+  height: 85vh;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.accountpage .sign-in-wrapper {
+  width: 233px;
+  display: flex;
+  flex-direction: column;
+}
+.accountpage .sign-in-wrapper h1 {
+  font-family: segoeui;
+  font-size: 26px;
+  margin-bottom: 44px;
+}
+.accountpage .sign-in-wrapper p {
+  font-family: segoeui;
+}
+.accountpage .sign-in-wrapper input[type=text] {
+  font-size: 16px;
+  margin-bottom: 44px;
+  border: none;
+  outline: none;
+  border-bottom: 2px black solid;
+}
+.accountpage .sign-in-wrapper input[type=submit] {
+  width: 170px;
+  height: 45px;
+  color: white;
+  border: none;
+  background-color: #587c83;
+}
 
 /*# sourceMappingURL=styles.css.map */

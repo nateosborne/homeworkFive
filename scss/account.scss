@@ -1,0 +1,39 @@
+.accountpage {
+  display: flex;
+  height: 85vh;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .sign-in-wrapper {
+    width: 233px;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-family: segoeui;
+      font-size: 26px;
+      margin-bottom: 44px;
+    }
+
+    p {
+      font-family: segoeui;
+    }
+
+    input[type="text"] {
+      font-size: 16px;
+      margin-bottom: 44px;
+      border: none;
+      outline: none;
+      border-bottom: 2px black solid;
+    }
+
+    input[type="submit"] {
+      width: 170px;
+      height: 45px;
+      color: white;
+      border: none;
+      background-color: #587c83;
+    }
+  }
+}
