@@ -1,0 +1,67 @@
+.aboutpage{
+    height: 1891px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .aboutcont{
+        display: flex;
+        flex-direction: column;
+        height: 1387px;
+        width: 1567px;
+        margin-top: 170px;
+    }
+
+    .about1{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        margin-bottom: 213px;
+
+        .about1img{
+            height: 587px;
+            width: 393px;
+            background-image: url(/images/about-photo.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .about2img{
+            height: 587px;
+            width: 393px;
+            background-image: url(/images/about-photo-two.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .about1text{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+
+            .about1textheader{
+                font-size: 32px;
+                font-family: segoeuiB;
+                display: flex;
+                justify-content: center;
+            }
+
+            .founded{
+                font-size: 26px;
+                font-family: segoeuiB;
+                display: flex;
+                justify-content: center;
+            }
+
+            .about1lorem{
+                font-family: segoeuiB;
+                margin-left: 40px;
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1400px){
+
+}

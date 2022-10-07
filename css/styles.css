@@ -272,5 +272,60 @@ footer .socials .twitter {
     margin-bottom: 100px;
   }
 }
+.aboutpage {
+  height: 1891px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.aboutpage .aboutcont {
+  display: flex;
+  flex-direction: column;
+  height: 1387px;
+  width: 1567px;
+  margin-top: 170px;
+}
+.aboutpage .about1 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  margin-bottom: 213px;
+}
+.aboutpage .about1 .about1img {
+  height: 587px;
+  width: 393px;
+  background-image: url(/images/about-photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.aboutpage .about1 .about2img {
+  height: 587px;
+  width: 393px;
+  background-image: url(/images/about-photo-two.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.aboutpage .about1 .about1text {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.aboutpage .about1 .about1text .about1textheader {
+  font-size: 32px;
+  font-family: segoeuiB;
+  display: flex;
+  justify-content: center;
+}
+.aboutpage .about1 .about1text .founded {
+  font-size: 26px;
+  font-family: segoeuiB;
+  display: flex;
+  justify-content: center;
+}
+.aboutpage .about1 .about1text .about1lorem {
+  font-family: segoeuiB;
+  margin-left: 40px;
+  margin-top: 40px;
+}
 
 /*# sourceMappingURL=styles.css.map */
