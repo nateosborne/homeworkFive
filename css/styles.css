@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, p {
 nav {
   background-color: #fff;
   width: 100%;
-  height: 60px;
+  height: 108px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,8 +37,8 @@ nav .logo .logoimg {
   background-repeat: no-repeat;
 }
 nav .searchbar {
-  width: 400px;
-  height: 25px;
+  width: 604px;
+  height: 44px;
   background-color: #587C83;
   display: flex;
   align-items: baseline;
@@ -60,7 +60,7 @@ nav .searchbar p {
   font-size: 12px;
 }
 nav .mainpages {
-  width: 500px;
+  width: 700px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -164,6 +164,113 @@ footer .socials .twitter {
   width: 30px;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.homepage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.homepage .homehero {
+  width: 1500px;
+  height: 530px;
+  background-image: linear-gradient(rgba(88, 124, 123, 0.5), rgba(88, 124, 123, 0.5)), url(../images/home-hero.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 158px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.homepage .homehero .homeherotext {
+  display: flex;
+  flex-direction: column;
+  margin-right: 182px;
+}
+.homepage .homehero .homeherotext .homeherotexttop {
+  font-size: 32px;
+  font-family: segoeuiB;
+  color: white;
+}
+.homepage .homehero .homeherotext p {
+  color: white;
+  font-family: segoeui;
+}
+
+.homepage2 {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.homepage2 .homebookscont {
+  width: 93%;
+  height: 841px;
+  margin-top: 176px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 188px;
+}
+.homepage2 .homebookscont .book1cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 413px;
+}
+.homepage2 .homebookscont .book1cont .book1img {
+  margin: 0 auto;
+  height: 491px;
+  width: 306px;
+  background-image: url(/images/to-kill-a-mockingbird.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.homepage2 .homebookscont .book1cont .book2img {
+  margin: 0 auto;
+  height: 491px;
+  width: 322px;
+  background-image: url(/images/becoming.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.homepage2 .homebookscont .book1cont .book3img {
+  margin: 0 auto;
+  height: 491px;
+  width: 327px;
+  background-image: url(/images/firestarter.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.homepage2 .homebookscont .book1cont .book1text {
+  font-family: segoeui;
+  text-align: center;
+}
+.homepage2 .homebookscont .book1cont .book1price {
+  font-size: 32px;
+  font-family: segoeuiB;
+  text-align: center;
+}
+.homepage2 .homebookscont .book1cont .addtocart {
+  width: 222px;
+  height: 68px;
+  margin: 0 auto;
+  background-color: white;
+  font-family: segoeui;
+}
+
+@media all and (max-width: 1400px) {
+  .homepage2 {
+    height: 2700px;
+  }
+  .homebookscont {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .book1cont {
+    margin-bottom: 100px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

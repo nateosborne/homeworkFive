@@ -1,0 +1,125 @@
+.homepage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .homehero{
+        width: 1500px;
+        height: 530px;
+        background-image: linear-gradient(
+            rgba(88, 124, 123, .5),
+            rgba(88, 124, 123, .5),
+          ), url(../images/home-hero.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 158px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .homeherotext{
+            display: flex;
+            flex-direction: column;
+            margin-right: 182px;
+            
+            .homeherotexttop{
+                font-size: 32px;
+                font-family: segoeuiB;
+                color: white;
+            }
+
+            p{
+                color: white;
+                font-family: segoeui;
+            }
+        }
+    }
+
+    
+}
+
+.homepage2{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+    .homebookscont{
+        width: 93%;
+        height: 841px;
+        margin-top: 176px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 188px;
+
+        .book1cont{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            width: 413px;
+
+            .book1img{
+                margin: 0 auto;
+                height: 491px;
+                width: 306px;
+                background-image: url(/images/to-kill-a-mockingbird.jpg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+            .book2img{
+                margin: 0 auto;
+                height: 491px;
+                width: 322px;
+                background-image: url(/images/becoming.jpg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+            .book3img{
+                margin: 0 auto;
+                height: 491px;
+                width: 327px;
+                background-image: url(/images/firestarter.jpg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+            .book1text{
+                font-family: segoeui;
+                text-align: center;
+            }
+
+            .book1price{
+                font-size: 32px;
+                font-family: segoeuiB;
+                text-align: center;
+            }
+
+            .addtocart{
+                width: 222px;
+                height: 68px;
+                margin: 0 auto;
+                background-color: white;
+                font-family: segoeui;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1400px){
+    .homepage2{
+        height: 2700px;
+    }
+
+    .homebookscont{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .book1cont{
+        margin-bottom: 100px;
+    }
+}
