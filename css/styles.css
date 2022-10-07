@@ -349,11 +349,15 @@ footer .socials .twitter {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 26px;
 }
+.bookspage .book-row4 {
+  margin-bottom: 160px;
+}
 .bookspage .book-row,
 .bookspage .book-row2,
 .bookspage .book-row3,
 .bookspage .book-row4 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .bookspage .book-row .book-row--book,
@@ -367,7 +371,7 @@ footer .socials .twitter {
 .bookspage .book-row2 .book-row--book img,
 .bookspage .book-row3 .book-row--book img,
 .bookspage .book-row4 .book-row--book img {
-  width: 220px;
+  width: 210px;
   height: 260px;
   margin-right: 30px;
 }
@@ -377,7 +381,7 @@ footer .socials .twitter {
 .bookspage .book-row4 .book-row--book .desc {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
-  width: 70%;
+  max-width: 70%;
 }
 .bookspage .book-row .book-row--book .desc button,
 .bookspage .book-row .book-row--book .desc p,
@@ -397,6 +401,71 @@ footer .socials .twitter {
   height: 68px;
   border: 2px solid black;
   background-color: white;
+}
+
+@media all and (max-width: 1420px) {
+  .bookspage {
+    padding: 0 50px;
+  }
+  .bookspage .title {
+    margin-top: 63px;
+    margin-bottom: 65px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .bookspage .title h1 {
+    font-size: 12px;
+  }
+  .bookspage .book-row4 {
+    margin-bottom: 0px;
+  }
+  .bookspage .book-row,
+.bookspage .book-row2,
+.bookspage .book-row3,
+.bookspage .book-row4 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bookspage .book-row .book-row--book,
+.bookspage .book-row2 .book-row--book,
+.bookspage .book-row3 .book-row--book,
+.bookspage .book-row4 .book-row--book {
+    display: flex;
+    width: 500px;
+  }
+  .bookspage .book-row .book-row--book img,
+.bookspage .book-row2 .book-row--book img,
+.bookspage .book-row3 .book-row--book img,
+.bookspage .book-row4 .book-row--book img {
+    width: 110px;
+    height: 130px;
+    margin-right: 30px;
+  }
+  .bookspage .book-row .book-row--book .desc,
+.bookspage .book-row2 .book-row--book .desc,
+.bookspage .book-row3 .book-row--book .desc,
+.bookspage .book-row4 .book-row--book .desc {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    width: 100%;
+  }
+  .bookspage .book-row .book-row--book .desc p,
+.bookspage .book-row2 .book-row--book .desc p,
+.bookspage .book-row3 .book-row--book .desc p,
+.bookspage .book-row4 .book-row--book .desc p {
+    margin-bottom: 17px;
+    word-wrap: normal;
+  }
+  .bookspage .book-row .book-row--book .desc button,
+.bookspage .book-row2 .book-row--book .desc button,
+.bookspage .book-row3 .book-row--book .desc button,
+.bookspage .book-row4 .book-row--book .desc button {
+    width: 126px;
+    height: 37px;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 11px;
+    margin-bottom: 46px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
