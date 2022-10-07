@@ -56,7 +56,7 @@ function initURLListener() {
 }
 
 function buyNow() {
-  $(".book-info button").on("click", function (e) {
+  $(".desc button").on("click", function (e) {
     let bookID = e.currentTarget.id;
     console.log(bookID);
     MODEL.addToCart(bookID);

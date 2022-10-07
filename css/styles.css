@@ -502,4 +502,219 @@ footer .socials .twitter {
   background-color: #587c83;
 }
 
+@media all and (max-width: 768px) {
+  .accountpage {
+    flex-direction: column;
+  }
+  .accountpage .sign-in-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .accountpage .sign-in-wrapper h1 {
+    font-size: 16px;
+  }
+}
+.blogcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.blogcontent .last {
+  margin-bottom: 117px;
+}
+.blogcontent .blogs-row {
+  height: 463px;
+  margin-top: 117px;
+  background-color: #587c83;
+  max-width: 80vw;
+  display: flex;
+}
+.blogcontent .blogs-row .blogs-image {
+  display: flex;
+}
+.blogcontent .blogs-row .feb {
+  padding-left: 50px;
+  padding-top: 43px;
+}
+.blogcontent .blogs-row .feb img {
+  width: 246px;
+  height: 376px;
+}
+.blogcontent .blogs-row img {
+  margin-right: 114px;
+  height: 463px;
+  width: 622px;
+}
+.blogcontent .blogs-row .blogs-text {
+  padding: 50px;
+  width: 40%;
+  padding-left: 40px;
+  color: white;
+  font-family: segoeui;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.blogcontent .blogs-row .blogs-text h1 {
+  font-size: 32px;
+}
+.blogcontent .blogs-row .blogs-text p {
+  font-size: 16px;
+}
+.blogcontent .blogs-row .blogs-text button {
+  width: 222px;
+  height: 68px;
+  background-color: #587c83;
+  border: 2px white solid;
+  color: white;
+}
+
+@media all and (max-width: 850px) {
+  .blogcontent .last {
+    margin-bottom: 117px;
+  }
+  .blogcontent .blogs-row {
+    height: 229px;
+    margin-top: 117px;
+    background-color: #587c83;
+    width: 80vw;
+    display: flex;
+  }
+  .blogcontent .blogs-row .blogs-image {
+    display: flex;
+  }
+  .blogcontent .blogs-row .feb {
+    padding-left: 50px;
+    padding-top: 43px;
+  }
+  .blogcontent .blogs-row .feb img {
+    width: 96px;
+    height: 146px;
+  }
+  .blogcontent .blogs-row img {
+    margin-right: 20px;
+    height: 229px;
+    width: 300px;
+  }
+  .blogcontent .blogs-row .blogs-text {
+    padding: 30px 10px;
+    width: 45%;
+    color: white;
+    font-family: segoeui;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .blogcontent .blogs-row .blogs-text h1 {
+    font-size: 12px;
+  }
+  .blogcontent .blogs-row .blogs-text p {
+    font-size: 11px;
+  }
+  .blogcontent .blogs-row .blogs-text button {
+    width: 89px;
+    height: 34px;
+    background-color: #587c83;
+    border: 2px white solid;
+    color: white;
+    font-size: 12px;
+  }
+}
+.blogpagecontent {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.blogpagecontent .hero {
+  margin-top: 163px;
+  margin-bottom: 117px;
+  width: 80vw;
+  height: 463px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 151px 0px;
+}
+.blogpagecontent .hero h1,
+.blogpagecontent .hero p,
+.blogpagecontent .hero h2 {
+  color: white;
+  font-family: segoeui;
+}
+.blogpagecontent #eread {
+  background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../images/eread-hero.jpg);
+}
+.blogpagecontent #bookclub-img {
+  background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../images/book-club-hero.jpg);
+}
+
+.blog-text {
+  width: 80%;
+  display: flex;
+}
+.blog-text .blog-image {
+  width: 646px;
+  height: 464px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blog-text .--bookclub {
+  background-image: url(../images/open-book-blog.jpg);
+}
+.blog-text .--eread {
+  background-image: url(../images/ereading-blog.jpg);
+}
+.blog-text .blog-p {
+  width: 65%;
+  padding-left: 20px;
+  font-family: segoeui;
+  font-size: 16;
+  margin-bottom: 200px;
+}
+
+.feb-row {
+  display: flex;
+  width: 80vw;
+  margin-bottom: 140px;
+}
+.feb-row .feb-img {
+  width: 250px;
+  height: 380px;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+.feb-row .--michelle {
+  background-image: url(../images/becoming.jpg);
+}
+.feb-row .--viola {
+  background-image: url(../images/finding-me.jpg);
+}
+.feb-row .feb-text {
+  width: 75%;
+  padding-left: 20px;
+}
+.feb-row .feb-text h2 {
+  margin-bottom: 40px;
+}
+.feb-row .feb-text h2,
+.feb-row .feb-text p {
+  font-family: segoeui;
+}
+.feb-row .feb-text p {
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -15,69 +15,93 @@ var userInfo = {};
 var cart = [];
 var bookList = [
   {
+    bookTitle: "Twilight Box Set",
     image: "twilight-box-set.jpg",
     price: "99.99",
+    idx: 0,
   },
 
   {
+    bookTitle: "Harry Potter Box Set",
     image: "hp-box-set.jpg",
     price: "100",
+    idx: 1,
   },
 
   {
+    bookTitle: "Game of Thrones Box Set",
     image: "got-box-set.jpg",
     price: "100",
+    idx: 2,
   },
 ];
 
 var bookList2 = [
   {
+    bookTitle: "Finding Me",
     image: "finding-me.jpg",
     price: "27.99",
+    idx: 3,
   },
 
   {
+    bookTitle: "Martin Luther King Jr. Biography",
     image: "mlk-biography.jpg",
     price: "19.99",
+    idx: 4,
   },
 
   {
+    bookTitle: "Elenor Roosevelt Biography",
     image: "elenor-roosevelt-biography.jpg",
     price: "17.99",
+    idx: 5,
   },
 ];
 
 var bookList3 = [
   {
+    bookTitle: "Misery",
     image: "misery.jpg",
     price: "19.99",
+    idx: 6,
   },
 
   {
+    bookTitle: "Frankenstein",
     image: "frankenstein.jpg",
     price: "15.99",
+    idx: 7,
   },
 
   {
+    bookTitle: "Phantoms",
     image: "phantoms.jpg",
     price: "19.99",
+    idx: 8,
   },
 ];
 
 var bookList4 = [
   {
+    bookTitle: "Winnie the Pooh",
     image: "winnie-the-pooh.jpg",
     price: "19.99",
+    idx: 9,
   },
 
   {
+    bookTitle: "Cat in the Hat",
     image: "cat-and-the-hat.jpg",
     price: "15.99",
+    idx: 10,
   },
 
   {
+    bookTitle: "Fun Facts About Space",
     image: "fun-facts-about-space.jpg",
     price: "7.99",
+    idx: 11,
   },
 ];
 
@@ -104,7 +128,7 @@ export function changePage(pageID, callback) {
           malesuada fames ac.</p>
           <p><b>$${book.price}</b></p>
   
-          <button id="${idx}">Buy</button>
+          <button id="${idx}">Add to cart</button>
         </div>
       </div>`);
       });
@@ -122,7 +146,7 @@ export function changePage(pageID, callback) {
           malesuada fames ac.</p>
           <p><b>$${book.price}</b></p>
   
-          <button id="${idx}">Buy</button>
+          <button id="${idx}">Add to cart</button>
         </div>
       </div>`);
       });
@@ -140,7 +164,7 @@ export function changePage(pageID, callback) {
           malesuada fames ac.</p>
           <p><b>$${book.price}</b></p>
   
-          <button id="${idx}">Buy</button>
+          <button id="${idx}">Add to cart</button>
         </div>
       </div>`);
       });
@@ -158,7 +182,7 @@ export function changePage(pageID, callback) {
         malesuada fames ac.</p>
         <p><b>$${book.price}</b></p>
 
-        <button id="${idx}">Buy</button>
+        <button id="${idx}">Add to cart</button>
       </div>
     </div>`);
       });
@@ -166,7 +190,7 @@ export function changePage(pageID, callback) {
     });
   } else {
     $.get(`pages/${pageID}.html`, function (data) {
-      console.log("data " + data);
+      console.log(data);
       $("#app").html(data);
       $.each(cart, function (idx, cartItem) {
         console.log(bookList[cartItem]);
@@ -177,7 +201,7 @@ export function changePage(pageID, callback) {
         <div class="book-img">
           <img src="assets/${book.bookImg}" alt="" />
         </div>
-        <div class="book-info">
+        <div class="desc">
           <h4>${book.bookTitle}</h4>
           <p>Author: ${book.bookAuthor}</p>
           <p>Price: $${book.price}</p>
@@ -197,5 +221,4 @@ export function setUserInfo(userObject) {
 
 export function addToCart(bookIdx) {
   cart.push(bookIdx);
-  $("#cartCount").html(cart.length.toString());
 }
