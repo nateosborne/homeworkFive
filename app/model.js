@@ -197,16 +197,18 @@ export function changePage(pageID, callback) {
 
         let book = bookList[cartItem];
 
-        $("items").append(`<div class="book">
-        <div class="book-img">
-          <img src="assets/${book.bookImg}" alt="" />
+        $(".items").append(`<div class="book-row--book">
+        <div class="image">
+          <img src="images/${book.image}" alt="" />
         </div>
         <div class="desc">
-          <h4>${book.bookTitle}</h4>
-          <p>Author: ${book.bookAuthor}</p>
-          <p>Price: $${book.price}</p>
+        
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et
+          malesuada fames ac.</p>
+          <p><b>$${book.price}</b></p>
   
-          <button id="${idx}">Buy</button>
+          <button id="${idx}">Add to cart</button>
         </div>
       </div>`);
       });
@@ -222,3 +224,17 @@ export function setUserInfo(userObject) {
 export function addToCart(bookIdx) {
   cart.push(bookIdx);
 }
+
+
+{/* <div class="book">
+        <div class="book-img">
+          <img src="assets/${book.bookImg}" alt="" />
+        </div>
+        <div class="desc">
+          <h4>${book.bookTitle}</h4>
+          <p>Author: ${book.bookAuthor}</p>
+          <p>Price: $${book.price}</p>
+  
+          <button id="${idx}">Buy</button>
+        </div>
+      </div> */}
